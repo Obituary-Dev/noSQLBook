@@ -1,0 +1,22 @@
+<%- include("header") -%>
+<div class="ui main container">
+    <form action="/Book" method="POST" enctype="application/x-www-form-urlencoded" class="ui form">
+        <div class="field">
+            <label for="id">id : </label>
+            <input type="text" name="id" id="id" value="11">
+            <label for="name">name : </label>
+            <input type="text" name="name" id="name" value="Obituary">
+            <label for="message">message : </label>
+            <textarea name="msg" id="msg">Test</textarea>
+            <label for="evaluation">Evaluation : </label>
+            <input type="text" name="evaluation" id="evaluation" value="4">
+        </div>
+        <button type="submit" class="ui blue animated submit large button">
+            <div class="visible content">Submit</div>
+            <div class="hidden content">
+                <i class="right arrow icon"></i>
+            </div>
+        </button>
+    </form>
+</div>
+<%- include("footer") -%>

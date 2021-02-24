@@ -1,0 +1,15 @@
+<%- include ("header") -%>
+<h1>Display : </h1>
+<div class="ui main container">
+    <ul> <% books.forEach(function(user){ %>
+        <li>
+            <a href="http://localhost:3000/Book/<%=user._id%>">&#128065;</a>
+            <a href="http://localhost:3000/Book/update/<%=user._id%>">&#9998;</a>
+            <a href="http://localhost:3000/Book/delete/<%=user._id%>">&#10006;</a>
+
+            <strong> <%= user.name %> </strong> said <%= user.message %>
+        </li>
+        <% }) %>
+    </ul>
+</div>
+<%- include ("footer") -%>
